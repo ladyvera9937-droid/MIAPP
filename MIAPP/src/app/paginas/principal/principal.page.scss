@@ -1,18 +1,25 @@
 //segundo card 
 
-.Card2 { 
-  width:200px;
-  margin:280px auto;
-  border-radius: 18px;
-  box-shadow: 0 4px 8px rgba(225, 65, 92, 0.33);
-
-
-
+.card2 {
+   width: 200px;
+   margin: 20px auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(225, 65, 92, 0.33);
 }
+
 .img{
     width: 50%;
     border-radius:  16px;
     margin-bottom: 15px;
     
 
+}
+
+.carg{
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 10px;
+  
 }

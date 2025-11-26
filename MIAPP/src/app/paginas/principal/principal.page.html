@@ -5,17 +5,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<ion-card> 
+
+<div class="carg">
+<ion-card class="card2" (click)="irvermas()"> 
    <ion-img src="assets/img/Azul.jpg"  class="img"></ion-img>
-  <ion-text>
-    <h1>Enterizo Azul</h1>
-  </ion-text>
- <ion-text color="danger">
-    <h2>Precio: $50</h2>
-  </ion-text>
+   <ion-card-header>
+    <ion-card-title>Enterizo Azul</ion-card-title>
+    <ion-card-subtitle color="danger">Precio: $50</ion-card-subtitle>
+  </ion-card-header>
 </ion-card>
 
-<ion-card> class="card2"
+<ion-card class="card2">
   <ion-img src="assets/img/Cafe.jpg"  class="img"></ion-img>
   <ion-card-header>
     <ion-card-title>Vestido Café</ion-card-title>
@@ -25,61 +25,78 @@
 
 
 
-<ion-card> 
+<ion-card class="card2"> 
   <ion-img src="assets/img/Pantalonamarillo.jpg"  class="img"></ion-img>
-  <ion-text>
-    <h1>Conjunto</h1>
-  </ion-text>
- <ion-text color="danger">
-    <h2>Precio: $60</h2>
-  </ion-text>
+<ion-card-header>
+    <ion-card-title>Conjunto Amarillo</ion-card-title>
+    <ion-card-subtitle color="danger">Precio: $60</ion-card-subtitle>
+  </ion-card-header>
 </ion-card>
 
-<ion-card> 
+<ion-card class="card2"> 
   <ion-img src="assets/img/Plomooscuro.jpg"  class="img"></ion-img>
-  <ion-text>
-    <h1>Pantalón Plomo y Blusa Blanca</h1>
-  </ion-text>
- <ion-text color="danger">
-    <h2>Precio: $60</h2>
-  </ion-text>
+  <ion-card-header>
+    <ion-card-title>Conjunto Plomo</ion-card-title>
+    <ion-card-subtitle color="danger">Precio: $60</ion-card-subtitle>
+  </ion-card-header>
 </ion-card>
 
+<ion-card class="card2"> 
+  <ion-img src="assets/img/Oliva.jpg"  class="img"></ion-img>
+  <ion-card-header>
+    <ion-card-title>Traje Oliva</ion-card-title>
+    <ion-card-subtitle color="danger">Precio: $65</ion-card-subtitle>
+  </ion-card-header>
+</ion-card>
+
+<ion-card class="card2"> 
+  <ion-img src="assets/img/Verdeagua.jpg"  class="img"></ion-img>
+  <ion-card-header>
+    <ion-card-title>Traje Aguamarina</ion-card-title>
+    <ion-card-subtitle color="danger">Precio: $65</ion-card-subtitle>
+  </ion-card-header>
+</ion-card>
+</div>
 
 <ion-card>
   <ion-card-header>
-    <ion-card-title>Card Title</ion-card-title>
-    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    <ion-card-title>Precios</ion-card-title>
+    <ion-card-subtitle>Ropa</ion-card-subtitle>
   </ion-card-header>
   <ion-card-content>
     <ion-list>
       <ion-item>
         <ion-thumbnail slot="start">
-           <ion-img src="assets/img/Pantalonamarillo.jpg"  class="img"></ion-img>
+           <ion-img src="assets/img/Azul.jpg"  class="img"></ion-img>
         </ion-thumbnail>
-        <ion-label>Item</ion-label>
+        <ion-label>Enterizo Azul</ion-label>
+        <ion-label>$ 50</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-img src="assets/img/Cafe.jpg"  class="img"></ion-img>
+        </ion-thumbnail>
+        <ion-label>Vestido Café</ion-label>
+        <ion-label>$ 60</ion-label>
       </ion-item>
 
       <ion-item>
         <ion-thumbnail slot="start">
           <ion-img src="assets/img/Pantalonamarillo.jpg"  class="img"></ion-img>
         </ion-thumbnail>
-        <ion-label>Item</ion-label>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail slot="start">
-          <ion-img src="assets/img/Pantalonamarillo.jpg"  class="img"></ion-img>
-        </ion-thumbnail>
-        <ion-label>Item</ion-label>
+        <ion-label>Pantalón Amarillo</ion-label>
+        <ion-label>$ 60</ion-label>
       </ion-item>
 
       <ion-item lines="none">
         <ion-thumbnail slot="start">
-          <ion-img src="assets/img/Pantalonamarillo.jpg"  class="img"></ion-img>
+          <ion-img src="assets/img/Plomooscuro.jpg"  class="img"></ion-img>
         </ion-thumbnail>
-        <ion-label>Item</ion-label>
+        <ion-label>Conjunto Plomo</ion-label>
+        <ion-label>$ 60</ion-label>
       </ion-item>
+
     </ion-list>
   </ion-card-content>
 </ion-card>
