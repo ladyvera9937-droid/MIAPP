@@ -13,7 +13,51 @@ import { Router } from '@angular/router';
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PrincipalPage implements OnInit {
+  productos = [
+    {
+      id: 1,
+      titulo: "Enterizo",
+      precio:50,
+      descripcion:"Enterizo Azul",
+      imagen:"assets/img/Azul.jpg"
+    },
+    {
+      id: 2,
+      titulo: "Vestido",
+      precio:60,
+      descripcion:"Vestido Café",
+      imagen:"assets/img/Cafe.jpg"
+    },
+    {
+      id: 3,
+      titulo: "Conjunto",
+      precio:60,
+      descripcion:"Conjunto Amarillo",
+      imagen:"assets/img/Pantalonamarillo.jpg"
+    },
+    {
+      id: 4,
+      titulo: "Conjunto",
+      precio:60,
+      descripcion:"Conjunto Plomo",
+      imagen:"assets/img/Plomooscuro.jpg"
+    },
+    {
+      id: 5,
+      titulo: "Traje",
+      precio:65,
+      descripcion:"Traje Oliva",
+      imagen:"assets/img/Oliva.jpg"
+    },
+    {
+      id: 6,
+      titulo: "Traje",
+      precio:65,
+      descripcion:"Traje Aguamarina",
+      imagen:"assets/img/Verdeagua.jpg"
+    }
 
+  ] 
   constructor(
     private router: Router
   ) { }
@@ -22,8 +66,8 @@ export class PrincipalPage implements OnInit {
   }
 
 
-  irvermas(){
-    this.router.navigate(['/vermas'])
+  irvermas(producto:any){
+    this.router.navigate(['/vermas'], { queryParams: producto });
   }
 
 }
