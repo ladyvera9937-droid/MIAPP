@@ -16,7 +16,7 @@ export class PrincipalPage implements OnInit {
   productos = [
     {
       id: 1,
-      titulo: "Enterizo",
+      titulo: "Enterizo Azul",
       precio:50,
       descripcion:"Enterizo Azul",
       imagen:"assets/img/Azul.jpg"
@@ -55,6 +55,34 @@ export class PrincipalPage implements OnInit {
       precio:65,
       descripcion:"Traje Aguamarina",
       imagen:"assets/img/Verdeagua.jpg"
+    },
+    {
+      id: 7,
+      titulo: "Dress Rosado",
+      precio:60,
+      descripcion:"Vestido Rosado con corte clásico",
+      imagen:"assets/img/Rosado.jpg"
+    },
+    {
+      id: 8,
+      titulo: "Dress Rojo",
+      precio:65,
+      descripcion:"Vestido Rojo con falda de arandeles y corte asimétrico",
+      imagen:"assets/img/Rojo.jpg"
+    },
+    {
+      id: 9,
+      titulo: "Dress Celeste",
+      precio:60,
+      descripcion:"Vestido Celeste con mangas largas y estilo campana",
+      imagen:"assets/img/Celeste.jpg"
+    },
+    {
+      id: 10,
+      titulo: "Dress Negro",
+      precio:65,
+      descripcion:"Vestido Negro con corte corazón",
+      imagen:"assets/img/Vestidonegro.jpg"
     }
 
   ] 

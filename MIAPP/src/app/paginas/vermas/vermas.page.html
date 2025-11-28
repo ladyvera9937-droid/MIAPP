@@ -1,16 +1,23 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>vermas</ion-title>
+    <ion-title>{{ producto.titulo }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-<img [src]="producto.imagen"    >
-<div>
-  <h2 class="titulo" >{{producto.nombre}}</h2>
-  <p class="descripcion" >{{producto.precio}}</p>
-  <h3 class="precio" >{{producto.descripcion}}</h3>
+<ion-content >
 
-</div>
+  <div class="contenedor-vermas">
+
+    <img [src]="producto.imagen" class="imagen"/>
+
+    <h1>{{ producto.titulo }}</h1>
+
+    <h2>Precio: ${{ producto.precio }}</h2>
+
+    <p>
+      {{ producto.descripcion }}
+    </p>
+
+  </div>
 
 </ion-content>

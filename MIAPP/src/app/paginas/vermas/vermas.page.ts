@@ -12,9 +12,10 @@ import { ActivatedRoute } from '@angular/router';
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class VermasPage implements OnInit {
- producto: any = {};
 
-  constructor(private route: ActivatedRoute) { }
+  producto: any = {};
+
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {

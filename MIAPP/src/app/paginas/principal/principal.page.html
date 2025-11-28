@@ -6,19 +6,16 @@
 
 <ion-content [fullscreen]="true">
 
-<div    class="carg" >
- <ion-card  class="card2"  *ngFor="let p of productos" (click)="irvermas(p)">
-  <img (srcc)="imagen" class="img" />
-  <ion-card-header>
-    <ion-card-title class="titulo">{(p.titulo)}</ion-card-title>
-    <ion-card-subtitle color="danger" class="precio">Precio:$ {(p.precio)}</ion-card-subtitle>
-  </ion-card-header>
+<div   class="carg" >
+  <ion-card  class="card2"  *ngFor="let p of productos" (click)="irvermas(p)" >
+    <img [src]="p.imagen" class="img" />
+    <ion-card-header>
+      <ion-card-title class="titulo">{{p.titulo}}</ion-card-title>
+      <ion-card-subtitle color="danger" class="precio">Precio:$ {{p.precio}}</ion-card-subtitle>
+     </ion-card-header>
 
- </ion-card>
+
+  </ion-card>
 
 </div>
-
-
-
- 
 </ion-content>
