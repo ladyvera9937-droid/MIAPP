@@ -17,44 +17,44 @@ export class PrincipalPage implements OnInit {
   productos = [
     {
       id: 1,
-      titulo: "Enterizo Azul",
-      precio:50,
-      descripcion:"Enterizo Azul",
-      imagen:"assets/img/Azul.jpg"
+      titulo: "Terno",
+      precio:60,
+      descripcion:"Terno Celeste con crop top",
+      imagen:"assets/img/Ternoceleste.jpg"
     },
     {
       id: 2,
       titulo: "Vestido",
       precio:60,
-      descripcion:"Vestido Café",
+      descripcion:"Vestido Café con corte asimétrico",
       imagen:"assets/img/Cafe.jpg"
     },
     {
       id: 3,
       titulo: "Conjunto",
       precio:60,
-      descripcion:"Conjunto Amarillo",
+      descripcion:"Conjunto Amarillo y Blusa blanca",
       imagen:"assets/img/Pantalonamarillo.jpg"
     },
     {
       id: 4,
       titulo: "Conjunto",
       precio:60,
-      descripcion:"Conjunto Plomo",
+      descripcion:"Conjunto Plomo con blusa cuello tortuga",
       imagen:"assets/img/Plomooscuro.jpg"
     },
     {
       id: 5,
       titulo: "Traje",
       precio:65,
-      descripcion:"Traje Oliva",
+      descripcion:"Traje Oliva con corset",
       imagen:"assets/img/Oliva.jpg"
     },
     {
       id: 6,
-      titulo: "Traje",
+      titulo: "Dress Aguamarina",
       precio:65,
-      descripcion:"Traje Aguamarina",
+      descripcion:"Traje Aguamarina estilo princesa",
       imagen:"assets/img/Verdeagua.jpg"
     },
     {
@@ -66,10 +66,10 @@ export class PrincipalPage implements OnInit {
     },
     {
       id: 8,
-      titulo: "Dress Rojo",
+      titulo: "Terno",
       precio:65,
-      descripcion:"Vestido Rojo con falda de arandeles y corte asimétrico",
-      imagen:"assets/img/Rojo.jpg"
+      descripcion:"Terno Rojo con brilos",
+      imagen:"assets/img/Ternorojo.jpg"
     },
     {
       id: 9,
@@ -84,9 +84,12 @@ export class PrincipalPage implements OnInit {
       precio:65,
       descripcion:"Vestido Negro con corte corazón",
       imagen:"assets/img/Vestidonegro.jpg"
-    }
+    },
 
   ] 
+
+   productosfiltrados= {...this.productos};
+
   constructor(
     private router: Router
   ) { }
@@ -98,5 +101,22 @@ export class PrincipalPage implements OnInit {
   irvermas(producto:any){
     this.router.navigate(['/vermas'], { queryParams: producto });
   }
+
+  filtrar(event:any){
+    const texto = (event.target.value ||''). tolowerCase(). trim();
+
+    if (texto === ''){
+       this.productosfiltrados = [...this.productos];
+       return;
+  }
+
+  this.productosfiltrados = this.productos.filter( 
+    p => p.titulo.toLowerCase().includes(texto) || 
+     p.descripcion.toLowerCase().includes(texto) ||
+     p.precio.toString().includes(texto)
+    );
+
+}
+
 
 }
