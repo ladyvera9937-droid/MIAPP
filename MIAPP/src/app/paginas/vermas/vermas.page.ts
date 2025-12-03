@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar} from '@ionic/angular/standalone';
 import { ActivatedRoute } from '@angular/router';
-import { HeaderGlobalComponent } from '../componentes/header-global/header-global.component';
+import { HeaderGlobalComponent } from 'src/app/componentes/header-global/header-global.component';
 
 @Component({
   selector: 'app-vermas',

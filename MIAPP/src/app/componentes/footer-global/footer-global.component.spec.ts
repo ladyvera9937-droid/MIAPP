@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { HeaderGlobalComponent } from './header-global.component';
+import { FooterGlobalComponent } from './footer-global.component';
 
-describe('HeaderGlobalComponent', () => {
-  let component: HeaderGlobalComponent;
-  let fixture: ComponentFixture<HeaderGlobalComponent>;
+describe('FooterGlobalComponent', () => {
+  let component: FooterGlobalComponent;
+  let fixture: ComponentFixture<FooterGlobalComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderGlobalComponent ],
+      declarations: [ FooterGlobalComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(HeaderGlobalComponent);
+    fixture = TestBed.createComponent(FooterGlobalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

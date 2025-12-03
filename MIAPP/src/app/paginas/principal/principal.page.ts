@@ -1,16 +1,16 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonFooter } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
-import { HeaderGlobalComponent } from '../componentes/header-global/header-global.component';
+import { FooterGlobalComponent } from 'src/app/componentes/footer-global/footer-global.component';
 
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.page.html',
   styleUrls: ['./principal.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderGlobalComponent]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, FooterGlobalComponent, IonFooter]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PrincipalPage implements OnInit {
@@ -88,7 +88,7 @@ export class PrincipalPage implements OnInit {
 
   ] 
 
-   productosfiltrados= {...this.productos};
+   productosfiltrados = {...this.productos};
 
   constructor(
     private router: Router
@@ -99,11 +99,11 @@ export class PrincipalPage implements OnInit {
 
 
   irvermas(producto:any){
-    this.router.navigate(['/vermas'], { queryParams: producto });
+    this.router.navigate(['/vermas'], { queryParams: producto});
   }
 
   filtrar(event:any){
-    const texto = (event.target.value ||''). tolowerCase(). trim();
+    const texto = (event.target.value || ''). toLowerCase(). trim();
 
     if (texto === ''){
        this.productosfiltrados = [...this.productos];
@@ -114,6 +114,7 @@ export class PrincipalPage implements OnInit {
     p => p.titulo.toLowerCase().includes(texto) || 
      p.descripcion.toLowerCase().includes(texto) ||
      p.precio.toString().includes(texto)
+
     );
 
 }
