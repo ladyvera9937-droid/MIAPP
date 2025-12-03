@@ -88,7 +88,7 @@ export class PrincipalPage implements OnInit {
 
   ] 
 
-   productosfiltrados = {...this.productos};
+   productosfiltrados = [...this.productos];
 
   constructor(
     private router: Router
@@ -102,21 +102,18 @@ export class PrincipalPage implements OnInit {
     this.router.navigate(['/vermas'], { queryParams: producto});
   }
 
-  filtrar(event:any){
-    const texto = (event.target.value || ''). toLowerCase(). trim();
+  filtrar(event: any){
+     const texto = (event.target.value || '').toLowerCase().trim();
 
-    if (texto === ''){
-       this.productosfiltrados = [...this.productos];
-       return;
-  }
-
-  this.productosfiltrados = this.productos.filter( 
-    p => p.titulo.toLowerCase().includes(texto) || 
-     p.descripcion.toLowerCase().includes(texto) ||
-     p.precio.toString().includes(texto)
-
-    );
-
+     if (texto === '') { 
+        this.productosfiltrados = [...this.productos ];
+        return;
+     }
+     this.productosfiltrados = this.productos.filter( 
+      p => p.titulo.toLowerCase().includes(texto) ||
+       p.descripcion.toLowerCase().includes(texto) ||
+       p.precio.toString().includes(texto)
+     );
 }
 
 

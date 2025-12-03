@@ -1,4 +1,4 @@
-
+<app-header-global></app-header-global>
 
 <ion-header [translucent]="true">
   <ion-toolbar>
@@ -9,10 +9,8 @@
 <ion-content [fullscreen]="true">
 
     <ion-searchbar placeholder= "Buscar productos" 
-    (ionInput)="filtrar($event)">
+    (ionInput)="filtrar($event)" >
     </ion-searchbar>
-
-
 
 <div   class="carg" >
   <ion-card  class="card2"  *ngFor="let p of productosfiltrados" (click)="irvermas(p)" >
