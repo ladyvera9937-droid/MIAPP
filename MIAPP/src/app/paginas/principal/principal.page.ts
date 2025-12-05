@@ -85,6 +85,77 @@ export class PrincipalPage implements OnInit {
       descripcion:"Vestido Negro con corte corazón",
       imagen:"assets/img/Vestidonegro.jpg"
     },
+    {
+      id: 11,
+      titulo: "Chaqueta de sastre",
+      precio:75,
+      descripcion:"Chaqueta larga y falda corta amarilla",
+      imagen:"assets/img/Guantes.jpg"
+    },
+    {
+      id: 12,
+      titulo: "Corset",
+      precio:65,
+      descripcion:"Conjunto de chaqueta, short y corset",
+      imagen:"assets/img/Corset.jpg"
+    },
+    {
+      id: 13,
+      titulo: "Falda Animal print",
+      precio:40,
+      descripcion:"Falda larga de animal print",
+      imagen:"assets/img/Animalprint.jpg"
+    },
+    {
+      id: 14,
+      titulo: "Dress Cafe",
+      precio:60,
+      descripcion:"Vestido café con la parte superior formal",
+      imagen:"assets/img/Cafeclaro.jpg"
+    },
+    {
+      id: 15,
+      titulo: "Abrigo",
+      precio:35,
+      descripcion:"Abrigo estilo arcoíris",
+      imagen:"assets/img/Arcoiris.jpg"
+    },
+    {
+      id: 16,
+      titulo: "Terno Lila",
+      precio:65,
+      descripcion:"Terno de dos piezas color lila estilo semiformal",
+      imagen:"assets/img/Lila.jpg"
+    },
+    {
+      id: 17,
+      titulo: "Blusa",
+      precio:25,
+      descripcion:"Blusa azul de mangas largas con abertura en el cuello",
+      imagen:"assets/img/Jean.jpg"
+    },
+    {
+      id: 18,
+      titulo: "Suéter",
+      precio: 25,
+      descripcion:"Suéter verde estilo strapless",
+      imagen:"assets/img/Verdelimon.jpg"
+    },
+    {
+      id: 19,
+      titulo: "Pantalón",
+      precio:35,
+      descripcion:"Pantalón naranja estilo campana",
+      imagen:"assets/img/Blusa.jpg"
+    },
+    {
+      id: 20,
+      titulo: "Terno",
+      precio:65,
+      descripcion:"Blusa mangas largas estilo sastre y falda asimétrica",
+      imagen:"assets/img/Faldaplizada.jpg"
+    },
+
 
   ] 
 
