@@ -1,8 +1,8 @@
 //segundo card
 
 .card2 {
-   width: 200px;
-   margin: 20px auto;
+   width: 100%;
+   //margin: 20px auto;
     border-radius: 18px;
     box-shadow: 0 4px 8px rgba(225, 65, 92, 0.33);
 }
@@ -20,7 +20,17 @@
 
 .carg {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-    padding: 10px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 25px;
+    justify-content: center;
+}
+
+@media (min-width: 1024px){
+
+    .carg{
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }

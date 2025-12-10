@@ -1,18 +1,11 @@
 <app-header-global></app-header-global>
 
-<ion-header class="header"> 
-    <ion-buttons slot="start">
-      <img class="logo" src="assets/img/Logo.jpg"/>
-    <ion-title> Historia </ion-title>
-    </ion-buttons>
-</ion-header>
-
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
   <img src="assets/img/Historia.png" class="mihistoria"/>
 
-  <ion-title color="tertiary"><h1>Nuestra Historia</h1></ion-title>
+  <ion-card-content class="card"><ion-title color="tertiary"><h1>Nuestra Historia</h1></ion-title>
 
   <p> 
     Nuestra historia comenzó con un sueño: crear ropa que no solo vistiera, sino que contara historias. 
@@ -26,7 +19,9 @@
     Nuestro camino ha estado marcado por pasión, dedicación y un profundo amor por los detalles que hacen que una prenda sea verdaderamente especial.
     
   </p>
-  <ion-title color="tertiary"><h1> Mirando hacia el futuro </h1> </ion-title>
+  </ion-card-content>
+  
+  <ion-card-content class="card"><ion-title color="tertiary"><h1> Mirando hacia el futuro </h1> </ion-title>
     <p>
     Nuestro objetivo sigue siendo crecer y ofrecer moda que inspire. Queremos que cada colección sea una invitación 
     a explorar nuevas combinaciones, a atreverse con lo diferente y a celebrar la individualidad. En cada prenda 
@@ -34,5 +29,6 @@
     buscamos crear una comunidad de chicas que aman expresarse a través de su estilo. Escuchamos sus ideas, compartimos tendencias 
     y nos aseguramos de que cada prenda se sienta cercana y accesible, pero siempre con ese toque exclusivo que nos caracteriza.
   </p>
+  </ion-card-content>
 
 </ion-content>
