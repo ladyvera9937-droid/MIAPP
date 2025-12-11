@@ -12,15 +12,7 @@ export class MasComponent  implements OnInit {
   constructor( 
     private modalCtrl: ModalController,
   ) { }
-  async verimagengrande(producto: any){
-    const modal = await this.modalCtrl.create({
-           component: MasComponent, 
-           componentProps: { imagen: producto.imagen, 
-            titulo: producto.titulo },
-            cssClass: 'estilo-modal'
-    });
-    await modal.present();
-}
+
 
   ngOnInit() {}
 
