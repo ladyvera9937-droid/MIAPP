@@ -17,7 +17,8 @@ export const routes: Routes = [
   {
     path: 'vermas',
     loadComponent: () => import('./paginas/vermas/vermas.page').then( m => m.VermasPage)
-  },  {
+  },
+  {
     path: 'nosotros',
     loadComponent: () => import('./paginas/nosotros/nosotros.page').then( m => m.NosotrosPage)
   },
@@ -32,3 +33,4 @@ export const routes: Routes = [
 
 
 ];
+
