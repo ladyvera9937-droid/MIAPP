@@ -1,3 +1,13 @@
-<p>
-  mas works!
-</p>
+<ion-header>
+  <ion-toolbar >
+    <ion-title>{{ titulo }}</ion-title>
+    <ion-button color="danger" slot="end" (click)="cerrarModal()">
+      Cerrar
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+ <div   class="conte-img"   >   
+  <img class="img-mas" [src]="imagen" >
+ </div>
+</ion-content>

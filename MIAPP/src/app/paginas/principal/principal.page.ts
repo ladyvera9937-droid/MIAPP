@@ -33,8 +33,9 @@ export class PrincipalPage implements OnInit {
     this.cargarCategorias();
   }
 
-
-
+mostrarTodos() {
+  this.productosfiltrados = [...this.productos];
+}
   cargarCategorias(){
      this.http.get('assets/BD/categoria.json')
      .subscribe((data: any) => {

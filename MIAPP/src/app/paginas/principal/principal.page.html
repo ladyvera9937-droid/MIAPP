@@ -7,9 +7,11 @@
 
   <nav class="categorias" >
    <ul class="menu-horizontal">
-    
+    <li class="item" (click)="mostrarTodos()">
+      Todos
+    </li>
     <li class="item"  *ngFor="let cat of categoria">
-      {{cat.categorias}}
+      {{cat.categoria}}
        <ul class="submenu">
         <li *ngFor="let sub of cat.subcategoria"
          (click)="filtrarPorSubcategoria(sub)">
