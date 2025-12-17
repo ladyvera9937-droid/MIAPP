@@ -1,0 +1,36 @@
+[
+
+    {
+        "categoria":"Vestidos",
+        "subcategoria": [
+            "Largo",
+            "Corto",
+            "Asimétrico"
+        ]
+    },
+    {
+        "categoria":"Ternos",
+        "subcategoria": [
+            "Dos piezas",
+            "Tres piezas"
+        ]
+    },
+    {
+        "categoria":"Conjuntos",
+        "subcategoria": [
+            "Casual",
+            "Elegante"
+        ]
+    },
+    {
+        "categoria":"Prendas superiores o inferiores",
+        "subcategoria": [
+            "Falda",
+            "Pantalón",
+            "Abrigo o Suéter",
+            "Blusa"
+        ]
+    }
+
+
+]
