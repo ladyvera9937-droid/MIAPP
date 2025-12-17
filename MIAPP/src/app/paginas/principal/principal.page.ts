@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
@@ -13,10 +13,21 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   templateUrl: './principal.page.html',
   styleUrls: ['./principal.page.scss'],
   standalone: true,
-  imports: [HttpClientModule, IonContent, CommonModule, FormsModule,HeaderGlobalComponent, FooterGlobalComponent,]
+  imports: [HttpClientModule, IonContent, CommonModule, FormsModule,HeaderGlobalComponent, FooterGlobalComponent, NgFor]
   ,schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PrincipalPage implements OnInit {
+  imagenesCarrusel = [
+  'assets/img/banner1.jpg',
+  'assets/img/banner2.jpg',
+  
+];
+
+slideOpts = { 
+  initialSlide: 0, 
+  speed: 600, 
+  autoplay: { delay: 3000 }, 
+  loop: true };
    
   productos: any[]=[];
   productosfiltrados: any[]= [];

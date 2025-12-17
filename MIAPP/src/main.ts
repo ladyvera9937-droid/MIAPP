@@ -7,9 +7,6 @@ import { AppComponent } from './app/app.component';
 import { register } from 'swiper/element/bundle';
 
 register();
-
-
-
 bootstrapApplication(AppComponent, {
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
